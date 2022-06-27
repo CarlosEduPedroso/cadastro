@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+
+    <title>cond florida</title>
+</head>
+<body>
+    <h2>by: Carlos Eduardo Pedroso</h2>
+    <div >
+        <P><h1>condominio edificio flòrida</h1></P>
+        <form >
+          <p> <label class="form-label">Nome:<input type="name" class="form-control" id="nome" placeholder="nome do cliente"></label></p>
+            <p> <label  class="form-label">documento:<input type="doc" class="form-control" id="documento" placeholder="documento do cliente"></label></p>
+            <p> <label class="form-label">sala:<input type="number" class="form-control"  id="sala" placeholder="digite a sala"></label></p>
+            <p> <label class="form-label">data:<input type="date" class="form-control" id="data" ></label></p>
+            <p>   <label class="form-label">hora:<input type="time" class="form-control" id="hora"></label></p>
+            <p> <button type="button" class="btn btn-success" onclick="salvarCliente()">Salvar</button> </p>
+        </form>
+    </div>
+    <hr>
+    <div  class="container col 6">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="row">NOME</th>
+                    <th scope="row">DOCUMENTO</th>
+                    <th scope="row">SALA</th>
+                    <th scope="row">DATA</th>
+                    <th scope="row">HORARIO</th>
+                    <th scope="row">TAMANHO</th>
+                
+                </tr>
+            </thead>
+            <tbody id="tabela">
+
+            </tbody>
+        </table>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
